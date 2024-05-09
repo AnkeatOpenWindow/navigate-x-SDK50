@@ -19,6 +19,7 @@ export default function App() {
             let iconName;
 
             if (route.name === 'Home') {
+              {/* 'home-outline' : is the name of the icon you write down to get the icon from Ionicons */}
               iconName = focused ? 'home' : 'home-outline';
             } else if (route.name === 'Development') {
               iconName = focused ? 'code' : 'code-outline'; // Using Ionicons' code icon
@@ -35,7 +36,9 @@ export default function App() {
           tabBarInactiveTintColor: 'gray',
         })}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
+        {/* name="Home" : is the name that shows on the tab bar */}
+        {/* component={HomeScreen} : is the component of the dirrent screens */}
+        <Tab.Screen name="Home" component={HomeScreen} /> 
         <Tab.Screen name="Development" component={DevelopmentScreen} />
         <Tab.Screen name="Photo" component={PhotosScreen} />
         <Tab.Screen name="Private" component={Private} />
